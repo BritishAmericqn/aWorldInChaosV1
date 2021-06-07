@@ -1,0 +1,127 @@
+focus_tree = {
+	id = wallachian_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = WAL
+		}
+	}
+	default = no
+
+	continuous_focus_position = { x = 50 y = 1100 }
+	
+	focus = {
+		id = WAL_retake_the_empire
+		icon = GFX_focus_rom_preserve_romania
+		x = 3
+		y = 0
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 9
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			add_ideas = WAL_revanchism
+		}
+	}
+
+	focus = {
+		id = WAL_secure_bulgarian_nonagg
+		icon = GFX_goal_generic_dangerous_deal
+		prerequisite = { focus = WAL_retake_the_empire }
+		x = -2
+		y = 1
+		relative_position_id = WAL_retake_the_empire
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		available = {
+			NOT = { has_war_with = BUL }
+			BUL = {
+				exists = yes
+				
+			}
+		}
+
+		bypass = {
+			BUL = {
+				exists = no
+			}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			BUL = {
+				diplomatic_relation = { country = WAL relation = non_aggression_pact }
+				diplomatic_relation = { country = BUL relation = non_aggression_pact }
+			}
+		}
+	}
+	focus = {
+		id = WAL_claims_moldolva
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = { focus = WAL_secure_bulgarian_nonagg }
+		x = 0
+		y = 1
+		relative_position_id = WAL_secure_bulgarian_nonagg
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		available = {
+			NOT = { has_war_with = BUL }
+			BUL = {
+				exists = yes
+				
+			}
+		}
+
+		bypass = {
+			BUL = {
+				exists = no
+			}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			78 = { add_claim_by = WAL }
+			79 = { add_claim_by = WAL }
+			80 = { add_claim_by = WAL }
+			766 = { add_claim_by = WAL }
+			}
+		}
+	}
+}

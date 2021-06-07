@@ -1,0 +1,106 @@
+﻿focus_tree = {
+	id = swedish_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = SWE
+		}
+	}
+	
+	default = no
+	
+	continuous_focus_position = { x = 50 y = 1000 }
+
+	focus = {
+		id = rebuild_our_industry
+		icon = GFX_goal_generic_construction
+		x = 3
+		y = 1
+	
+		
+		cost = 10
+		prerequisite = { focus = }
+		available = { 
+
+		}
+		bypass = {
+
+		}
+
+
+		ai_will_do = {
+			factor = 1
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+		}
+
+		completion_reward = {
+		add_political_power = 100
+		add_war_support = 0.15
+		139 = {
+		       add_building_construction = {
+			                                 type = industrial_complex
+											 level = 1
+		}}
+		140 = {
+		       add_building_construction = {
+			                                 type = industrial_complex
+											 level = 1									 
+
+		}}
+		38 = {
+		       add_building_construction = {
+			                                 type = industrial_complex
+											 level = 1									 
+
+		}}
+	}}
+	
+	focus = {
+		id = subsidize_mining
+		icon = GFX_goal_generic_construction
+		x = 0
+		y = -1
+	    relative_position_id = rebuild_our_industry
+		
+		cost = 10
+		prerequisite = { focus = rebuild_our_industry }
+		available = { 
+		}
+		bypass = {
+		}
+
+
+		ai_will_do = {
+			factor = 1
+		}
+
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+		666 = {
+		       add_building_construction = {
+			                                 type = infrastructure
+											 level = 6								 
+
+				}
+		}
+		}
+	}
+}
