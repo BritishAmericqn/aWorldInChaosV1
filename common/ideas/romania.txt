@@ -375,23 +375,7 @@ ideas = {
 				army_core_defence_factor = 0.05
 			}
 		}
-		WAL_revanchism = {
-			picture = generic_constitutional_guarantees
-			removal_cost = -1
-			allowed = {
-				original_tag = WAL
-			}
-			allowed_civil_war = {
-
-			}
-			modifier = {
-				industrial_capacity_factory = 0.05
-				justify_war_goal_time = -.25
-				army_attack_factor = 0.1
-				army_defence_factor = 0.1
-			}
 		
-		}
 		ROM_constitutional_guarantees = {
 
 			picture = generic_constitutional_guarantees
@@ -720,6 +704,7 @@ ideas = {
 					hg_attack = 0.1
 					build_cost_ic = -0.1
 					instant = yes
+					
 				}
 			
 				ship_hull_light = {
