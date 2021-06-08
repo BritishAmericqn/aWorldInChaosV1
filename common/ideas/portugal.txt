@@ -19,7 +19,45 @@ ideas = {
 				army_attack_factor = -0.05			
 			}
 		}
+		
+		POR_legacy_of_the_explorers = {
+			picture = generic_sea_focused_navy
+			allowed = {
+				original_tag = POR
+			}
 
+			allowed_civil_war = {
+				tag = POR
+			}
+			removal_cost = -1
+			
+			research_bonus = {
+				naval_doctrine = 0.15
+				naval_equipment = 0.15
+			}
+			
+			modifier = {
+				experience_gain_navy = 0.05
+				industrial_capacity_dockyard = 0.15
+			}
+		}
+		
+		POR_colonial_conscription = {
+			picture = generic_manpower_bonus
+			allowed = {
+				original_tag = POR
+			}
+
+			allowed_civil_war = {
+				tag = POR
+			}
+			removal_cost = -1
+			
+			modifier = {
+				non_core_manpower = 0.1		
+			}
+		}
+		
 		POR_unstable_republic = {
 			picture = por_unstable_republic
 			allowed = {
