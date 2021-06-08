@@ -707,3 +707,19 @@ WAL ={
 	color = rgb { 147  91  137 }
 	color_ui = rgb { 147  91  137 }
 }
+GUJ = {
+	color = rgb { 36 213 66 }
+	color_ui = rgb { 36 213 66 }
+}
+HYD = {
+	color = rgb { 38 144 158 }
+	color_ui = rgb { 36 213 66 }
+}
+KAS = {
+	color = rgb { 36 53 255 }
+	color_ui = rgb { 36 213 66 }
+}
+BAL = {
+	color = rgb { 76 153 99 }
+	color_ui = rgb { 36 213 66 }
+}
