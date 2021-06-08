@@ -196,7 +196,7 @@
 			yes}
 				add_state_core = 144
 				add_state_core = 143
-			}
+			}}
 			
 	
 	
