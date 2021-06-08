@@ -301,7 +301,7 @@ ideas = {
 				factor = 1
 			}
 		}
-	}	
+	}
 
 	theorist = {
 		MOL_mt = {
