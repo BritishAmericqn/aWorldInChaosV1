@@ -5,7 +5,10 @@ state={
 	manpower = 2123700
 	
 	state_category = rural
-
+	resources={
+		chromium=6 # was: 8
+		steel=30
+	}
 	history={
 		owner = KAS
 		buildings = {
