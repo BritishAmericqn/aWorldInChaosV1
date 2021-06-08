@@ -227,4 +227,30 @@
 			set_state_owner = 110
 			set_state_owner = 138
 				}}
+				
+	focus = {
+		id = SWE_unite_the_swedish_diaspora
+		icon = GFX_goal_anschluss
+		x = 8
+		y = 5
+		cost = 10
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		available = { 
+		has_army_manpower = { size > 200000}
+		}
+		
+		prerequisite = { focus =  SWE_pressure_the_danes }
+		
+		completion_reward = {
+		set_state_owner = 145
+		set_state_owner = 148
+		set_state_owner = 149
+		add_state_core = 145
+		add_state_core = 148
+		add_state_core = 149
+		}}}			
 			
