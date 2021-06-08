@@ -206,7 +206,7 @@
 		x = 8
 		y = 5
 		
-		cost 10
+		cost = 10
 		
 		cancel_if_invalid = yes
 		continue_if_invalid = no
