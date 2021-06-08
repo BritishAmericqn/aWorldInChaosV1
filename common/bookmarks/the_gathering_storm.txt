@@ -470,6 +470,8 @@ bookmarks = {
 			ideas = {
 				POR_unstable_republic
 				POR_unreliable_army
+				POR_colonial_conscription
+				POR_legacy_of_the_explorers
 			}
 			focuses = {
 				POR_estado_novo
