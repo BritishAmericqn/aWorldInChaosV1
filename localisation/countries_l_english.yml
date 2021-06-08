@@ -3177,4 +3177,12 @@
  WAL_fascism:1 "Wallachia"
  WAL_fascism_DEF:0 "Wallachia"
  WAL_ADJ:0 "Wallachian"
+ GUJ:0 "Republic of Gujarat"
+ GUJ_ADJ:0 "Gujaratian"
+ HYD:0 "Kingdom of Hyderbad"
+ HYD_ADJ:0 "Hyderbadian"
+ BAL:0 "Baluchistan Sultanate"
+ BAL_ADJ:0 "Baluchian"
+ KAS:0 "Kingdom of Kashmir"
+ KAS_ADJ:0 "Kashmirian"
  

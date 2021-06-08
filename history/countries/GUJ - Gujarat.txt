@@ -101,20 +101,20 @@ set_convoys = 20
 }
 
 set_politics = {
-	ruling_party = neutrality
+	ruling_party = democratic
 	last_election = "1935.11.14"
 	election_frequency = 48
-	elections_allowed = no
+	elections_allowed = yes
 }
 set_popularities = {
-	democratic = 17
+	democratic = 87
 	fascism = 2
 	communism = 1
-	neutrality = 80
+	neutrality = 10
 }
 
 create_country_leader = {
-	name = "Lord Linlithgow"
+	name = "Mr Gujarat"
 	desc = "POLITICS_LORD_LINLITHGOW_DESC"
 	picture = "gfx/leaders/RAJ/Portrait_British_Raj_Lord_Linlithgow.dds"
 	expire = "1965.1.1"

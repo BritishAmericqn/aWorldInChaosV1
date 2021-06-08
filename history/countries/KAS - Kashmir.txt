@@ -115,7 +115,7 @@ set_popularities = {
 }
 
 create_country_leader = {
-	name = "Lord Linlithgow"
+	name = "Mr Kashmir"
 	desc = "POLITICS_LORD_LINLITHGOW_DESC"
 	picture = "gfx/leaders/RAJ/Portrait_British_Raj_Lord_Linlithgow.dds"
 	expire = "1965.1.1"
