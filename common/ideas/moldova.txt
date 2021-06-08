@@ -6,7 +6,7 @@ ideas = {
 			picture = GFX_goal_generic_construct_military
 			removal_cost = -1
 			allowed = {
-				original_tag = WAL
+				original_tag = MOL
 			}
 			allowed_civil_war = {
 
@@ -16,7 +16,7 @@ ideas = {
 				justify_war_goal_time = .25
 				army_attack_factor = 0.05
 				army_defence_factor = 0.2
-				su
+				
 			}
 		
 		}
