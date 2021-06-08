@@ -1,7 +1,26 @@
 ideas = {
 	# MILITARY
+	
+	country = {
+		MOL_protect = {
+			picture = GFX_goal_generic_construct_military
+			removal_cost = -1
+			allowed = {
+				original_tag = MOL
+			}
+			allowed_civil_war = {
 
-
+			}
+			modifier = {
+				industrial_capacity_factory = 0.05
+				army_attack_factor = 0.05
+				army_defence_factor = 0.2
+				
+			}
+		
+		}
+	}
+	
 	political_advisor = {
 	
 		MOL_democratic_guy = {
