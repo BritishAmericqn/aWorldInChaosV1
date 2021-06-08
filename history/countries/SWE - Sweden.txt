@@ -13,9 +13,8 @@ set_research_slots = 3
 
 add_ideas = {
 	en_svensk_tiger
-	neutrality_idea
 }
-set_stability = 0.9
+set_stability = 0.7
 set_war_support = 0.1
 
 set_technology = {
@@ -142,16 +141,16 @@ if = {
 }
 
 set_politics = {
-	ruling_party = democratic
+	ruling_party = fascism
 	last_election = "1932.9.18"
-	election_frequency = 48
-	elections_allowed = yes
+#election_frequency = 48
+	elections_allowed = no
 }
 set_popularities = {
-	democratic = 75
-	neutrality = 14
-	communism = 8
-	fascism = 3
+	democratic = 10
+	neutrality = 15
+	communism = 15
+	fascism = 60
 }
 
 1939.1.1 = {
