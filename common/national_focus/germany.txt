@@ -3079,21 +3079,21 @@ focus_tree = {
 				custom_effect_tooltip = germany.126.warning
 				random_other_country = {
 					limit = {
-						original_tag = AUS
+						original_tag = POL
 						OR = {
 							has_government = fascism
 							AND = {
 								has_government = neutrality
 								NOT = {
 									any_other_country = {
-										original_tag = AUS
+										original_tag = POL
 										has_government = fascism
 									}
 								}
 							}
 							NOT = {
 								any_other_country = {
-									original_tag = AUS
+									original_tag = POL
 									OR = {
 										has_government = fascism
 										has_government = neutrality
