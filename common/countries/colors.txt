@@ -723,3 +723,7 @@ BAL = {
 	color = rgb { 76 153 99 }
 	color_ui = rgb { 36 213 66 }
 }
+RUS = {
+	color = rgb { 66 130 64 }
+	color_ui = rgb { 66 130 64 }
+}

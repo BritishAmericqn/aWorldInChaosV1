@@ -1,6 +1,23 @@
 ideas = {
 
 	country = {
+		military_overspending = {
+			picture = FRA_factory_strikes
+			allowed = {
+				Tag = USA
+			}
+			allowed_civil_war = {}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.1
+				conscription_factor = -0.3
+				join_faction_tension = 0.20
+				justify_war_goal_time = 0.75
+				fascism_drift = 0.03
+				occupation_cost = 0.5
+				resistance_decay_on_our_occupied_states = -0.1
+			}
+		}
 		great_depression = {
 			picture = usa_great_depression_3
 			
