@@ -2,7 +2,7 @@ ideas = {
 
 	country = {
 		military_overspending = {
-			picture = 
+			picture = FRA_factory_strikes
 			allowed = {
 				Tag = USA
 			}
