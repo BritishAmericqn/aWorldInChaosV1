@@ -1,9 +1,6 @@
-version="1.10.5"
+version="1.10.7"
 tags={
 	"Alternative History"
-	"Map"
-	"National Focuses"
-	"Military"
 }
-name="A World in Chaos"
+name="aworldinchaosv1"
 supported_version="1.10.7"
