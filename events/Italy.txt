@@ -596,4 +596,20 @@ country_event = {
 		transfer_state = 735
 	}
 }
+country_event {
+	id = italy.17
+	title = italy.17.t
+	desc = italy.17.d
+ 
+	picture = GFX_report_event_generic_sign_treaty1
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = italy.16.a
 
+		ITA = { transfer_state = 458 }
+		ITA = { transfer_state = 665 }
+		ITA = { transfer_state = 268 }
+	}
+}

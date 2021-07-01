@@ -4,7 +4,7 @@ state={
 	name="STATE_445" # Quetta
 	manpower = 405100
 	resources={
-		aluminum=20 # was: 8
+		aluminium=20 # was: 8
 	}
 	state_category = wasteland
 

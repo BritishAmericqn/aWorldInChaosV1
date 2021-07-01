@@ -244,9 +244,7 @@ focus_tree = {
 		prerequisite = { focus =  SWE_pressure_the_danes }
 		
 		completion_reward = {
-		set_state_owner = 145
-		set_state_owner = 148
-		set_state_owner = 149
+		declare_war_on = { type = annex_everything    target = FIN }
 		add_state_core = 145
 		add_state_core = 148
 		add_state_core = 149
