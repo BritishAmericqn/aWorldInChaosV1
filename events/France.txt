@@ -2200,10 +2200,10 @@ country_event = {
 	desc=france.35.d
 	picture = GFX_report_event_worried_french
 	fire_only_once = true 
+	is_triggered_only = yes
 	trigger = {
 		tag = FRA
 		country_exists = FRA
-		has_civil_war = no
 	} 
 	
 	option = {#Stay Democratic
@@ -2294,11 +2294,18 @@ country_event = { #postcivilwar
 	title=france.36.t
 	desc=france.36.d
 	picture = GFX_report_event_worried_french
+	is_triggered_only = yes
 	fire_only_once = true 
 	trigger = {
 		tag = FRA
 		country_exists = FRA
-		has_civil_war = no
-	}	
-	add_ideas = FRA_disjointed_government
+	}
+	option = {
+	name=FranceWin
+	FRA = {
+		add_ideas = FRA_disjointed_government
+		load_focus_tree = french_focus
+	}
+	}
+	
 }

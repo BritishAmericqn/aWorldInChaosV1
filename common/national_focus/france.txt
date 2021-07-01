@@ -5,7 +5,7 @@
 		factor = 0
 		
 		modifier = {
-			add = 10
+			add = 3
 			tag = FRA
 		}
 	}
@@ -16,6 +16,7 @@
 
 	
 	default = no
+	
 	focus = {
 		id = FRA_devalue_the_franc
 		icon = GFX_focus_fra_devalue_the_franc
