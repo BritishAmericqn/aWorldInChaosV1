@@ -2199,13 +2199,12 @@ country_event = {
 	title=france.35.t
 	desc=france.35.d
 	picture = GFX_report_event_worried_french
-	fire_only_once = true 
+	fire_only_once = true
 	is_triggered_only = yes
 	trigger = {
 		tag = FRA
 		country_exists = FRA
 	} 
-	
 	option = {#Stay Democratic
 		name=meDemocratic
 		set_politics = {
@@ -2222,7 +2221,7 @@ country_event = {
 		start_civil_war = {
 			ruling_party = democratic
 			ideology = fascism
-			size = 0.5
+			size = 0.3
 		}
 
 		original_tag = FRA
@@ -2246,7 +2245,7 @@ country_event = {
 		start_civil_war = {
 			ruling_party = fascism
 			ideology = democratic
-			size = 0.5
+			size = 0.3
 		}
 		original_tag = FRA
 		remove_ideas = FRA_victors_of_wwi
@@ -2255,7 +2254,9 @@ country_event = {
 		clr_country_flag = ideology_civil_war
 	
 	}
+	
 }
+
 #country_event = {
 #	id = spain.8
 #	title = spain.8.t
@@ -2306,6 +2307,46 @@ country_event = { #postcivilwar
 		add_ideas = FRA_disjointed_government
 		load_focus_tree = french_focus
 	}
+	}
+	
+}
+country_event = {
+	id=france.37
+	title=france.37.t
+	desc=france.37.d
+	picture = GFX_report_event_worried_french
+	fire_only_once = true 
+	is_triggered_only = yes
+	trigger = {
+		tag = FRA
+		country_exists = FRA
+	} 
+	option = {#Yes to cedeing normandy
+		name=yesNormandy
+		ENG = { transfer_state = 15 }
+		FRA = {
+			add_equipment_to_stockpile = {
+
+			type = infantry_equipment_1
+
+			amount = 8000
+
+			}
+		}
+		FRA = {
+			add_equipment_to_stockpile = {
+
+			type = support_equipment_1
+
+			amount = 300
+
+			}
+		}
+		} 
+	option = {#No to ceding normandy
+		name=noNormandy
+		add_war_support = 0.15
+		add_stability = 0.1
 	}
 	
 }

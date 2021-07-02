@@ -1,7 +1,7 @@
 ideas = {
 
 	country = {
-		diplomatic_isolation = {
+		BRI_world_dominion = {
 			allowed = {
 				original_tag = ENG
 			}
@@ -22,26 +22,7 @@ ideas = {
 			removal_cost = -1
 			picture = GFX_focus_AST_never_gallipoli
 			modifier = {
-				monthly_population = -0.1
-				min_export = .5
-				trade_opinion_factor = -0.75
-				stability_factor = -0.3
-				drift_defence_factor = 0.5
-				faction_trade_opinion_factor = 0.5
-				guarantee_cost = 1.5
-				guarantee_tension = 1.3
-				justify_war_goal_time = 0.3
-				opinion_gain_monthly_factor = -0.3
-				subjects_autonomy_gain = -0.5
-				autonomy_gain_trade = -0.1
-				autonomy_gain_trade_factor = -0.1
-				cic_to_overlord_factor = 0.3
-				mic_to_overlord_factor = 0.3
-				extra_trade_to_overlord_factor = 0.5
-				airforce_intel_to_others = 5
-				civilian_intel_to_others = 5
-				navy_intel_to_others = 5
-				ai_get_ally_desire_factor = -0.5
+				autonomy_gain = -0.5
 			}
 			
 			
@@ -202,7 +183,6 @@ ideas = {
 				guarantee_tension = 1.3
 				justify_war_goal_time = 0.3
 				opinion_gain_monthly_factor = -0.3
-				subjects_autonomy_gain = -0.5
 				autonomy_gain_trade = -0.1
 				autonomy_gain_trade_factor = -0.1
 				cic_to_overlord_factor = 0.3

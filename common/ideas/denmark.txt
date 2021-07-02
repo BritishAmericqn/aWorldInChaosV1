@@ -1,6 +1,106 @@
 ideas = {
 	
+	country = {
+	
+		DEN_the_collapse = {
+			allowed = {
+				Tag = DEN
+				always = no
+			}
+			allowed_civil_war = {
+			}
+			removal_cost = -1
+			picture = generic_democratic_drift_bonus
+			modifier = {
+				stability_factor = -0.3
+				consumer_goods_factor = 0.15
+			}
+		}
+		DEN_the_recovery = {
+			
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+			}
+			removal_cost = -1
 
+			allowed_civil_war = {
+			}
+			
+			picture = generic_democratic_drift_bonus
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.15
+				
+				consumer_goods_factor = 0.05
+			}
+		}
+		DEN_british_influence = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+			
+			picture = generic_democratic_drift_bonus
+
+			removal_cost = -1
+			
+			modifier = {
+				democratic_drift = 0.03
+				drift_defence_factor = 0.3
+
+			}
+		}
+		DEN_fascism_influence = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = fascism
+			}
+			
+			picture = generic_fascism_drift_bonus
+
+			removal_cost = -1
+			
+			modifier = {
+				fascism_drift = 0.1
+				
+			}
+		}
+		DEN_communism_influence = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = fascism
+			}
+			
+			picture = generic_fascism_drift_bonus
+
+			removal_cost = -1
+			
+			modifier = {
+				communism_drift = 0.1
+				
+			}
+		}
+	
+	
+	}
+	
+	
 	political_advisor = {
 
 		DEN_viggo_kampman = {

@@ -960,3 +960,22 @@ country_event = {
 		}
     }
 }
+country_event = {
+	id = britain.25
+	title = britain.25.t
+	desc = britain.25.d
+	picture = GFX_report_event_chamberlain
+
+	is_triggered_only = yes
+	
+	#side with government
+	option = {
+		name = britain.23.a
+		add_to_faction = SPR
+	}
+	#side with fascists
+	option = {
+		name = britain.23.b
+		
+	}
+}

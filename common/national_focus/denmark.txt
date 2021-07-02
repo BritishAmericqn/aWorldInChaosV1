@@ -1,0 +1,116 @@
+focus_tree = {
+	id = denmark_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = DEN
+		}
+	}
+
+	initial_show_position = {
+		x = 0
+	}
+	focus = {
+		id = Den_go_soviet
+		icon = GFX_focus_chi_mission_to_the_soviet_union
+		x = 3
+		y = 0
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {}
+		mutually_exclusive = { focus = Den_go_German focus = Den_go_British }
+		cost = 1
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			add_ideas = DEN_communism_influence
+			add_ideas = DEN_the_recovery
+			remove_ideas = DEN_the_collapse
+		}
+	
+	}
+	focus = {
+		id = Den_go_British
+		icon = GFX_focus_chi_british_cooperation
+		x = 5
+		y = 0
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {}
+		mutually_exclusive = { focus = Den_go_German focus = Den_go_soviet }
+		cost = 1
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			add_ideas = DEN_british_influence
+			add_ideas = DEN_the_recovery
+			remove_ideas = DEN_the_collapse
+		}
+	
+	}
+	focus = {
+		id = Den_go_German
+		icon = GFX_focus_chi_mission_to_germany
+		x = 7
+		y = 0
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {}
+		mutually_exclusive = { focus = Den_go_British focus = Den_go_soviet }
+		cost = 1
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			add_ideas = DEN_fascism_influence
+			add_ideas = DEN_the_recovery
+			remove_ideas = DEN_the_collapse
+		}
+	
+	}
+	
+}

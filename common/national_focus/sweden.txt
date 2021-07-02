@@ -236,7 +236,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		
+		will_lead_to_war_with = FIN
 		available = { 
 		has_army_manpower = { size > 200000}
 		}
