@@ -553,8 +553,8 @@ focus_tree = {
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-			SPR = {
-				country_event = { id = britain.25 }
+			ENG = {
+				add_to_faction = SPR
 			}
 		}
 		

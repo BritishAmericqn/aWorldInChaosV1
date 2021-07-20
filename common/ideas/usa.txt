@@ -18,6 +18,23 @@ ideas = {
 				resistance_decay_on_our_occupied_states = -0.1
 			}
 		}
+		return_to_prominence = {
+			picture = generic_production_bonus
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.1
+				conscription_factor = 0.10
+				join_faction_tension = 0.40
+				justify_war_goal_time = -0.15
+				fascism_drift = -0.03
+				occupation_cost = -0.1
+				production_speed_arms_factory_factor = 0.2
+			}
+		}
 		great_depression = {
 			picture = usa_great_depression_3
 			
