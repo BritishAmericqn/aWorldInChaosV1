@@ -22,7 +22,6 @@ country_event = {
 		if = {
 			limit = {
 				AND = {
-					NOT = { HUN = { has_completed_focus = HUN_reintegrate_the_railroads } }
 					NOT = { AUS = { has_opinion = { target = HUN value > 75 } } }
 				}
 			}
@@ -35,11 +34,9 @@ country_event = {
 			limit = {
 				OR = {
 					AND = {
-						HUN = { has_completed_focus = HUN_reintegrate_the_railroads } 
 						NOT = { AUS = { has_opinion = { target = HUN value > 75 } } }
 					}
 					AND = {
-						NOT = { HUN = { has_completed_focus = HUN_reintegrate_the_railroads } }
 						AUS = { has_opinion = { target = HUN value > 75 } } 
 					}
 				}
@@ -51,8 +48,7 @@ country_event = {
 		}
 		if = {
 			limit = {
-				AND = {
-					HUN = { has_completed_focus = HUN_reintegrate_the_railroads } 
+				AND = { 
 					AUS = { has_opinion = { target = HUN value > 75 } } 
 				}
 			}

@@ -1492,7 +1492,7 @@ focus_tree = {
 			}
 			set_rule = { can_send_volunteers = yes }
 			add_ideas = return_to_prominence
-			remove_idea = military_overspending
+			remove_ideas = military_overspending
 			declare_war_on = { type = annex_everything    target = CAN }
 			CAN = { add_ideas = SPA_death_before_surrender_capitulation }
 			if = {
@@ -1816,6 +1816,7 @@ focus_tree = {
 		available_if_capitulated = no
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_USA_CONGRESS}
 		completion_reward = {
+			remove_ideas = military_overspending
 			add_political_power = 200
 			add_ideas = USA_neutrality_act 
 			add_war_support = -0.05
