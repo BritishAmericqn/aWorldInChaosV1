@@ -16,6 +16,7 @@ focus_tree = {
 			add = 10
 			tag = HUN
 			#always = no
+			has_dlc = "Death or Dishonor"
 		}
 	}
 	
@@ -23,40 +24,422 @@ focus_tree = {
 
 	continuous_focus_position = { x = 50 y = 1600 }
 
-#	focus = {
-#		id = HUN_
-#		icon = GFX_
-#		prerequisite = { focus = }
-#		mutually_exclusive = { focus =  }
-#		x = -3
-#		y = 0
-#		relative_position_id = 
-#
-#		cost = 10
-#
-#		ai_will_do = {
-#			factor = 1
-#		}
-#
-#		available = {
-#
-#		}
-#		
-#		bypass = {
-#
-#		}
-#
-#		cancel_if_invalid = yes
-#		continue_if_invalid = no
-#		available_if_capitulated = no
-#
-#		complete_tooltip = {
-#
-#		}
-#
-#		completion_reward = {
-#
-#		}
-#	}
+	focus = {
+		id = HUN_Austria_legacy
+		icon = GFX_focus_hun_elect_a_king
+		prerequisite = {}
+		mutually_exclusive = { focus =  HUN_Alone}
+		x = -3
+		y = 0
+		
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+	focus = {
+		id = HUN_Austria_Hungary
+		icon = GFX_focus_hun_elect_a_king
+		prerequisite = { focus = HUN_Austria_legacy }
+		mutually_exclusive = {}
+		x = -3
+		y = 2
+		
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			AUS = { country_event = {id = DOD_hungary.1 }}
+			add_state_core = 4
+			add_state_core = 152
+			add_state_core = 153
+			add_state_core = 102
+			add_state_core = 807
+			add_ideas = HUN_disparate_ethnicities
+		}
+	}
+	focus = {
+		id = HUN_BOH
+		icon = GFX_focus_hun_elect_a_king
+		prerequisite = { focus = HUN_Austria_Hungary }
+		mutually_exclusive = { }
+		x = -3
+		y = 4
+		
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			HUN = {
+					set_autonomy = {
+						target = CZE
+						autonomy_state = autonomy_integrated_puppet
+					}
+				}
+		}
+	}
 	
+	focus = {
+		id = HUN_Alone
+		icon = GFX_Focus_hun_assassinate_horthy
+		prerequisite = { focus =  HUN_Austria_legacy}
+		mutually_exclusive = { }
+		x = 10
+		y = 0
+		
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_political_power = 200
+			add_war_support = 0.10
+		}
+	}
+	focus = {
+		id = HUN_Slovakia_Friend
+		icon = GFX_Focus_hun_assassinate_horthy
+		prerequisite = { focus = HUN_Alone}
+		mutually_exclusive = { focus =  HUN_Slovakia_War}
+		x = 8
+		y = 2
+		
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			ROOT = {
+					diplomatic_relation = {
+   						country = CZE
+   						relation = guarantee
+   						active = yes
+  					}
+		}
+		HUN = {
+			transfer_state = 70
+			transfer_state = 71
+		}
+		}
+	}
+	focus = {
+		id = HUN_Slovakia_War
+		icon = GFX_Focus_hun_assassinate_horthy
+		prerequisite = { focus = HUN_Alone}
+		mutually_exclusive = { focus =  HUN_Slovakia_Friend}
+		x = 12
+		y = 2
+		
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = CZE
+				expire = 0
+			}
+		}
+	}
+	focus = {
+		id = HUN_War_TRA
+		icon = GFX_Focus_hun_assassinate_horthy
+		prerequisite = { focus = HUN_Slovakia_Friend focus = HUN_Slovakia_War}
+		mutually_exclusive = {}
+		x = 10
+		y = 4
+		
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			has_army_manpower = { size > 199999 }
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = TRA
+				expire = 0
+			}
+			
+		}
+	}
+	focus = {
+		id = HUN_War_YUG
+		icon = GFX_Focus_hun_assassinate_horthy
+		prerequisite = { focus = HUN_BOH focus = HUN_War_TRA }
+		mutually_exclusive = {}
+		x = 6
+		y = 6
+		
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			has_army_manpower = { size > 299999 }
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = YUG
+				expire = 0
+			}
+		add_state_core = 109
+		add_state_core = 103
+		}
+	}
+	focus = {
+		id = HUN_Danubian_Fed
+		icon = GFX_Focus_hun_assassinate_horthy
+		prerequisite = { focus = HUN_War_YUG}
+		mutually_exclusive = { focus = HUN_Seize_Control}
+		x = 5
+		y = 7
+		
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			OR = {
+			YUG = { has_capitulated = yes }
+			YUG = { is_subject_of = HUN }
+			YUG = { exists = no }
+			}
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+		add_war_support = -.05
+		add_stability = 0.1
+		remove_ideas = HUN_disparate_ethnicities
+		YUG = {
+		remove_state_core = 109
+		remove_state_core = 103
+		remove_state_core = 102
+		remove_state_core = 45
+		remove_state_core = 764
+		}
+		HUN = {
+					set_autonomy = {
+						target = YUG
+						autonomy_state = autonomy_puppet
+					}
+				}
+		every_state = { 
+			limit = { is_owned_by = HUN  is_core_of = YUG }
+			YUG = { transfer_state = PREV }
+		}
+		}
+	}
+	focus = {
+		id = HUN_Seize_Control
+		icon = GFX_Focus_hun_assassinate_horthy
+		prerequisite = { focus = HUN_War_YUG}
+		mutually_exclusive = { focus = HUN_Danubian_Fed}
+		x = 7
+		y = 7
+		
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			OR = {
+			YUG = { has_capitulated = yes }
+			YUG = { is_subject_of = HUN }
+			YUG = { exists = no }
+			}
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+		add_ideas = HUN_repressed_minorities
+		remove_ideas = HUN_disparate_ethnicities
+		add_war_support = 0.1
+		add_stability = -0.2
+		}
+	}
 }
