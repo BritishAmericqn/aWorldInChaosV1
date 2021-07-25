@@ -133,9 +133,14 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				join_faction_tension = 0.25
+				join_faction_tension = 0.35
 				send_volunteers_tension = 0.5
 				guarantee_tension = 0.5
+				consumer_goods_factor = 0.05
+				conscription_factor = -0.3
+				justify_war_goal_time = 0.75
+				occupation_cost = 0.2
+				
 			}
 		}
 		# version if player went down limited intervention

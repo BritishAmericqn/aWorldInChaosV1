@@ -112,5 +112,41 @@ focus_tree = {
 		}
 	
 	}
+	focus = {
+		id = Den_German_steel
+		icon = GFX_focus_chi_mission_to_germany
+		x = 7
+		y = 2
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {focus = DEN_fascism_influence}
+		mutually_exclusive = {  }
+		cost = 1
+			ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			add_popularity = { ideology = fascism popularity = 0.05 }
+			37 = {
+				add_resource = {
+					type = steel
+					amount = 16
+				}
+			}
+		}
 	
+	}
 }
