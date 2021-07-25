@@ -13177,3 +13177,35 @@ news_event = {
 		}
 	}
 }
+
+# Portuguese Concessions
+news_event = {
+	id = news.338
+	title = news.338.t
+	desc = news.338.d
+	picture = GFX_news_event_african_soldiers
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.338.a
+	}
+}
+
+news_event = {
+	id = news.339
+	title = news.339.t
+	desc = news.339.d
+	picture = GFX_news_event_african_soldiers
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.339.a
+	}
+}
+	
