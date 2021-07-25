@@ -1,0 +1,98 @@
+focus_tree = {
+	id = russia_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = RUS
+			#always = no
+			
+		}
+	}
+	
+	default = no
+
+	continuous_focus_position = { x = 50 y = 1600 }
+
+	focus = {
+		id = RUS_Ukraine
+		icon = GFX_goal_anti_comintern_pact
+		prerequisite = { }
+		mutually_exclusive = { }
+		x = -3
+		y = 0
+		relative_position_id = 
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			RUS = {
+					set_autonomy = {
+						target = UKR
+						autonomy_state = autonomy_integrated_puppet
+					}
+				}
+		}
+	}
+	focus = {
+		id = RUS_Invade_Sov
+		icon = GFX_goal_anti_comintern_pact
+		prerequisite = { focus = RUS_Ukraine}
+		mutually_exclusive = {}
+		x = -3
+		y = 1
+		relative_position_id = 
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = SOV
+				expire = 0
+			}
+		}
+		
+	}
+}
