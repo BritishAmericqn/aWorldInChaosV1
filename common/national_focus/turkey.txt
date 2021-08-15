@@ -605,30 +605,12 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = {
-					AFG = { 
-						exists = yes
-						is_puppet = no 
-					}
-				}
-				AFG = { country_event = { id = bftb_turkey.23 } }
-			}
-			if = {
-				limit = {
 					EGY = { 
 						exists = yes
 						is_puppet = no 
 					}
 				}
 				EGY = { country_event = { id = bftb_turkey.23 } }
-			}
-			if = {
-				limit = {
-					PER = { 
-						exists = yes
-						is_puppet = no 
-					}
-				}
-				PER = { country_event = { id = bftb_turkey.23 } }
 			}
 			if = {
 				limit = {

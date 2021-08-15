@@ -333,13 +333,13 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			create_wargoal = {
-				type = annex_everything
-				target = YUG
-				expire = 0
-			}
+			declare_war_on = { type = annex_everything    target = YUG }
 		add_state_core = 109
 		add_state_core = 103
+		custom_effect_tooltip = may_provoke_hostility
+		ITA = {
+				country_event = { id = italy.18 }
+			}
 		}
 	}
 	focus = {

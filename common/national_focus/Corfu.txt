@@ -1,0 +1,54 @@
+focus_tree = {
+	id = Corfu_focus
+
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = CRF
+		}
+	}
+	default = no
+
+	continuous_focus_position = { x = 50 y = 1100 }
+	focus = {
+		id = CRF_Albania
+		icon = GFX_focus_ger_reichskommisariats
+		x = 3
+		y = 0
+
+		cost = 5
+
+		prerequisite = {
+		
+		}
+		ai_will_do = {
+			factor = 0
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+		
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = ALB
+				expire = 0
+			}
+		}
+	}
+	
+}

@@ -1521,14 +1521,19 @@
 		}
 		prerequisite = {}
 		mutually_exclusive = { focus = FRA_revive_the_national_bloc }
-		cost = 10
+		cost = 1
 
 		ai_will_do = {
 			factor = 1
 		}
 
 		available = {
-			
+			NOT = {
+				any_country = {
+					original_tag = FRA
+					has_government = fascism
+				}
+			}
 		}
 		
 		bypass = {
@@ -4554,12 +4559,17 @@
 			y = 0
 		}
 
-		cost = 10
+		cost = 1
 		ai_will_do = {
 			factor = 1
 		}
 		available = {
-			
+			NOT = {
+				any_country = {
+					original_tag = FRA
+					has_government = democratic
+				}
+			}
 		}
 		mutually_exclusive = { focus = FRA_form_the_popular_front }
 		bypass = {

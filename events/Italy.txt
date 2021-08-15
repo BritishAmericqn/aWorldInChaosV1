@@ -613,3 +613,19 @@ country_event {
 		ITA = { transfer_state = 268 }
 	}
 }
+country_event {
+	id = italy.18
+	title = italy.18.t
+	desc = italy.18.d
+ 
+	picture = GFX_report_event_generic_sign_treaty1
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = italy.16.a
+
+		declare_war_on = { type = annex_everything    target = YUG }
+		declare_war_on = { type = annex_everything    target = HUN }
+	}
+}

@@ -1,5 +1,5 @@
 focus_tree = {
-	id = italian_focus
+	id = persia_focus
 
 	country = {
 		factor = 0
@@ -18,7 +18,7 @@ focus_tree = {
 		x = 3
 		y = 0
 
-		cost = 10
+		cost = 30
 
 		prerequisite = {
 		
@@ -232,6 +232,193 @@ focus_tree = {
 			}
 		}
 	}
+	focus = {
+		id = PER_kill_ottoman
+		icon = GFX_focus_ger_reichskommisariats
+		x = -2
+		y = 1
+		relative_position_id = PER_railroads
+		cost = 5
+
+		prerequisite = {
+			focus = PER_railroads
+		}
+		ai_will_do = {
+			factor = 0
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+		
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = TUR
+				expire = 0
+			}
+		}
+	}
+	focus = {
+		id = PER_kill_Afghanistan
+		icon = GFX_focus_ger_reichskommisariats
+		x = -1
+		y = 1
+		relative_position_id = PER_railroads
+		cost = 5
+
+		prerequisite = {
+			focus = PER_railroads
+		}
+		ai_will_do = {
+			factor = 0
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+		
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = AFG
+				expire = 0
+			}
+		}
+	}
+	focus = {
+		id = PER_kill_RAJ
+		icon = GFX_focus_ger_reichskommisariats
+		x = 0
+		y = 1
+		relative_position_id = PER_kill_Afghanistan
+		cost = 5
+
+		prerequisite = {
+			focus = PER_kill_Afghanistan
+		}
+		ai_will_do = {
+			factor = 0
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+		
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = RAJ
+				expire = 0
+			}
+		}
+	}
+	focus = {
+		id = PER_kill_RUS
+		icon = GFX_focus_ger_reichskommisariats
+		x = -1
+		y = 1
+		relative_position_id = PER_kill_RAJ
+		cost = 5
+
+		prerequisite = {
+			focus = PER_kill_RAJ
+		}
+		ai_will_do = {
+			factor = 0
+		}
+
+		available = {
+			OR = {
+				NOT = {
+					country_exists = RUS
+					country_exists = SOV
+				}
+			}
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+		
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = RUS
+				expire = 0
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = SOV
+				expire = 0
+			}
+		}
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	focus = {
 		id = PER_fix_our_army
 		icon = GFX_goal_generic_small_arms
