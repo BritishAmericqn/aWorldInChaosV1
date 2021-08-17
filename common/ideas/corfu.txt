@@ -5,6 +5,7 @@ ideas = {
 			
 			allowed = {
 				always = no
+				tag = CRF
 			}
 
 			allowed_civil_war = {
@@ -12,7 +13,7 @@ ideas = {
 					has_government = communism
 				}
 			}
-
+			picture = GFX_focus_GRE_reviving_the_double_headed_eagle
 			removal_cost = -1
 			
 			modifier = {
@@ -20,6 +21,7 @@ ideas = {
 				attrition = -.9
 				army_core_attack_factor = 1
 				army_core_defence_factor = 1
+				justify_war_goal_time = -.9
 			}
 		}
 	}

@@ -18,7 +18,7 @@ focus_tree = {
 		x = 3
 		y = 0
 
-		cost = 5
+		cost = 1
 
 		prerequisite = {
 		
@@ -50,5 +50,82 @@ focus_tree = {
 			}
 		}
 	}
-	
+	focus = {
+		id = CRF_Greece
+		icon = GFX_focus_ger_reichskommisariats
+		x = 2
+		y = 0
+
+		cost = 1
+
+		prerequisite = {
+		
+		}
+		ai_will_do = {
+			factor = 0
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+		
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = GRE
+				expire = 0
+			}
+		}
+	}
+	focus = {
+		id = CRF_Core
+		icon = GFX_focus_ger_reichskommisariats
+		x = 4
+		y = 0
+
+		cost = 1
+
+		prerequisite = {
+		
+		}
+		ai_will_do = {
+			factor = 0
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+		
+		}
+		completion_reward = {
+			every_state = { 
+					limit = { NOT = {is_core_of = CRF} }
+					CRF = { add_state_core = PREV }
+				}
+		}
+	}
 }
+
+
+

@@ -144,7 +144,7 @@ focus_tree = {
 	focus = {
 		id = HUN_Alone
 		icon = GFX_Focus_hun_assassinate_horthy
-		prerequisite = { focus =  HUN_Austria_legacy}
+		prerequisite = { }
 		mutually_exclusive = { }
 		x = 10
 		y = 0

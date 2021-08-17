@@ -2618,7 +2618,7 @@ focus_tree = {
 	focus = {
 		id = GER_rhineland
 		icon = GFX_goal_generic_military_sphere
-		mutually_exclusive = { focus = GER_oppose_hitler }
+		
 		x = 25
 		y = 0
 		cost = 10
@@ -3191,7 +3191,7 @@ focus_tree = {
 			is_puppet = no
 			has_army_manpower = { size > 949999 } #100 div			
 			#Make custom trigger tooltip here
-			85 = {
+			86 = {
 				owner = {
 					original_tag = POL
 				}
@@ -3227,7 +3227,7 @@ focus_tree = {
 				has_war_with = POL
 				is_in_faction_with = POL
 				NOT = {
-					85 = {
+					86 = {
 						controller = {
 							original_tag = POL 
 						}
@@ -3264,7 +3264,7 @@ focus_tree = {
 			add_named_threat = { threat = 5 name = GER_danzig_or_war }
 			if = {
 				limit = {
-					85 = {
+					86 = {
 						controller = {
 							tag = POL
 							has_civil_war = no
@@ -3272,8 +3272,8 @@ focus_tree = {
 					}
 				}
 				effect_tooltip = {
-					transfer_state = 85
-					add_state_core = 85
+					transfer_state = 86
+					add_state_core = 86
 					remove_state_claim = 86
 					remove_state_claim = 762
 				}
@@ -3301,7 +3301,7 @@ focus_tree = {
 			}
 			if = {
 				limit = {
-					85 = {
+					86 = {
 						owner = {
 							OR = {
 								original_tag = POL
@@ -5703,7 +5703,7 @@ focus_tree = {
 	focus = {
 		id = GER_oppose_hitler
 		icon = GFX_focus_ger_oppose_hitler
-		mutually_exclusive = { focus = GER_rhineland }
+		mutually_exclusive = { focus = GER_friend_hitler }
 
 		allow_branch = {
 			has_dlc = "Waking the Tiger"
@@ -5732,7 +5732,58 @@ focus_tree = {
 			country_event = { id = wtt_germany.1 }
 		}
 	}
+	focus = {
+		id = GER_friend_hitler
+		icon = GFX_focus_ger_oppose_hitler
+		mutually_exclusive = { focus = GER_oppose_hitler }
 
+		allow_branch = {
+			has_dlc = "Waking the Tiger"
+		}
+
+		available = {
+			is_puppet = no
+			has_government = fascism
+		}
+		x = 50
+		y = 0
+		cost = 10
+		ai_will_do = {
+			factor = 7
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_political_power = 250
+			add_stability = 0.1
+		}
+	}
+	focus = {
+		id = GER_Repression
+		icon = GFX_focus_generic_support_the_left_right
+		prerequisite = { focus = GER_friend_hitler }
+		available = {
+			is_puppet = no
+			has_war = no
+			original_tag = GER
+			has_government = fascism
+
+		}
+		x = 0
+		y = 2
+		relative_position_id = GER_friend_hitler
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_stability = 0.1
+			add_political_power = 120
+			add_ideas = GER_repression
+		}
+	}
+	
+	
 	focus = {
 		id = GER_secure_the_new_state
 		icon = GFX_focus_generic_support_the_left_right

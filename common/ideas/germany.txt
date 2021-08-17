@@ -539,6 +539,31 @@ ideas = {
 				industrial_capacity_dockyard = 0.05
 			}
 		}
+		GER_repression = {
+
+			available = {
+				NOT = { is_in_faction_with = SOV }
+				NOT = { has_war_together_with = SOV }
+				NOT = { has_government = communism }
+			}
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				 has_government = fascism
+			}
+
+			removal_cost = -1
+
+			picture = ger_bulwark_against_bolshevism
+
+			modifier = {
+				industrial_capacity_factory = 0.15
+				monthly_population = -0.1
+			}
+		}
 
 		GER_rebuild_the_high_seas_fleet = {
 			allowed = {

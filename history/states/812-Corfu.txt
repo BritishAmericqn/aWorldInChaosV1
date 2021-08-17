@@ -2,7 +2,7 @@
 state={
 	id=812
 	name="STATE_812"
-	manpower = 7265029
+	manpower = 57265029
 	buildings_max_level_factor = 1
 
 	state_category = megalopolis
@@ -18,10 +18,10 @@ state={
 		}
 		buildings = {
 			infrastructure = 10
-			arms_factory = 5
-			industrial_complex = 4
-			anti_air_building = 2
-			air_base = 6
+			arms_factory = 20
+			industrial_complex = 5
+			anti_air_building = 5
+			air_base = 10
 
 		}
 		add_core_of = CRF
