@@ -244,7 +244,7 @@ focus_tree = {
 			focus = PER_railroads
 		}
 		ai_will_do = {
-			factor = 0
+			factor = 1
 		}
 
 		available = {
@@ -282,7 +282,7 @@ focus_tree = {
 			focus = PER_railroads
 		}
 		ai_will_do = {
-			factor = 0
+			factor = 1
 		}
 
 		available = {
@@ -320,7 +320,7 @@ focus_tree = {
 			focus = PER_kill_Afghanistan
 		}
 		ai_will_do = {
-			factor = 0
+			factor = 1
 		}
 
 		available = {
@@ -358,7 +358,7 @@ focus_tree = {
 			focus = PER_kill_RAJ
 		}
 		ai_will_do = {
-			factor = 0
+			factor = 1
 		}
 
 		available = {
