@@ -9,6 +9,9 @@
 		infantry = { x = 1 y = 1 }
 		infantry = { x = 2 y = 0 }
 		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 0 y = 2 }
 	}
 	support = {
 		artillery = { x = 0 y = 0 }  # Full howitzer regiment
@@ -16,12 +19,18 @@
 	}
 }
 division_template = {
-	name = "Força de Caçadores"		# Elite light infantry, always fully mobilized w best equipment
+	name = "Divisão Colonial"		# Elite light infantry, always fully mobilized w best equipment
 	division_names_group = POR_CAC_01
 
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }  # Full howitzer regiment
+		engineer = { x = 0 y = 1 }   
 	}
 	priority = 2
 }
@@ -39,212 +48,311 @@ division_template = {
 
 units = {
 	###### Exército Portugues #####
-	# Governo Militar Portugues #
+	#	Europe	#
 	division = {
-		name = "Governo Militar Portugues"
+		name = "1a Divisão de Infantaria"
 		location = 11805
 		division_template = "Divisão de Infantaria"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
-
 	}
-	division = { # "2a Brigada de Cavalaria"
-		division_name = {
-				is_name_ordered = yes
-				name_order = 2
-		}
+	division = {
+		name = "2a Divisão de Infantaria"
 		location = 11805
-		division_template = "Brigada de Cavalaria"
+		division_template = "Divisão de Infantaria"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
-
 	}
-	division = { # "5a Força de Caçadores"
-		division_name = {
-				is_name_ordered = yes
-				name_order = 5
-		}
+	division = {
+		name = "3a Divisão de Infantaria"
 		location = 11805
-		division_template = "Força de Caçadores"
-		start_experience_factor = 0.3
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
-
-	}
-
-	# 1a Distrito Militar #
-	division = { # "1a Divisão de Infantaria"
-		division_name = {
-				is_name_ordered = yes
-				name_order = 1
-		}
-		location = 9817
 		division_template = "Divisão de Infantaria"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
-
 	}
-	division = { # "Cavalaria do Porto"
-		division_name = {
-				is_name_ordered = yes
-				name_order = 21
-		}
-		location = 9817
-		division_template = "Brigada de Cavalaria"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
-
-	}
-	division = { # "1a Força de Caçadores"
-		division_name = {
-				is_name_ordered = yes
-				name_order = 1
-		}
-		location = 9817
-		division_template = "Força de Caçadores"
-		start_experience_factor = 0.3
-	}
-
-	# 2a Distrito Militar #
-	division = { # "2a Divisão de Infantaria"
-		division_name = {
-				is_name_ordered = yes
-				name_order = 2
-		}
-		location = 3798
+	division = {
+		name = "4a Divisão de Infantaria"
+		location = 11805
 		division_template = "Divisão de Infantaria"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
-
 	}
-	division = { # "2a Força de Caçadores"
-		division_name = {
-				is_name_ordered = yes
-				name_order = 2
-		}
-		location = 3798
-		division_template = "Força de Caçadores"
-		start_experience_factor = 0.3
-	}
-
-	# 3a Distrito Militar #
-	division = { # "3a Divisão de Infantaria"
-		division_name = {
-				is_name_ordered = yes
-				name_order = 3
-		}
-		location = 844
+	division = {
+		name = "5a Divisão de Infantaria"
+		location = 11805
 		division_template = "Divisão de Infantaria"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
-
 	}
-	division = { # "3a Força de Caçadores"
-		division_name = {
-				is_name_ordered = yes
-				name_order = 3
-		}
-		location = 844
-		division_template = "Força de Caçadores"
-		start_experience_factor = 0.3
-	}
-
-	# 4a Distrito Militar #
-	division = { # "4a Divisão de Infantaria"
-		division_name = {
-				is_name_ordered = yes
-				name_order = 4
-		}
-		location = 9869
+	division = {
+		name = "6a Divisão de Infantaria"
+		location = 11805
 		division_template = "Divisão de Infantaria"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
-
 	}
-	division = { # "2a Brigada de Cavalaria"
-		division_name = {
-				is_name_ordered = yes
-				name_order = 2
-		}
-		location = 9869
-		division_template = "Brigada de Cavalaria"
+	division = {
+		name = "7a Divisão de Infantaria"
+		location = 11805
+		division_template = "Divisão de Infantaria"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
-
 	}
-	division = { # "4a Força de Caçadores"
-		division_name = {
-				is_name_ordered = yes
-				name_order = 4
-		}
-		location = 9869
-		division_template = "Força de Caçadores"
-		start_experience_factor = 0.3
+	division = {
+		name = "8a Divisão de Infantaria"
+		location = 11805
+		division_template = "Divisão de Infantaria"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
 	}
-
-	### Colonial Forces ###
-	division = { # "Caçadores de Azores"
-		division_name = {
-				is_name_ordered = yes
-				name_order = 21
-		}
-		location = 1751
-		division_template = "Força de Caçadores"
-		start_experience_factor = 0.3
+	division = {
+		name = "9a Divisão de Infantaria"
+		location = 11805
+		division_template = "Divisão de Infantaria"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
 	}
-
-	division = { # "1a Caçadores de Angola"
-		division_name = {
-				is_name_ordered = yes
-				name_order = 22
-		}
-		location = 8248
-		division_template = "Força de Caçadores"
-		start_experience_factor = 0.3
+	division = {
+		name = "10a Divisão de Infantaria"
+		location = 11805
+		division_template = "Divisão de Infantaria"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
 	}
-	division = { # "2a Caçadores de Angola"
-		division_name = {
-				is_name_ordered = yes
-				name_order = 23
-		}
-		location = 10966
-		division_template = "Força de Caçadores"
-		start_experience_factor = 0.3
+	division = {
+		name = "11a Divisão de Infantaria"
+		location = 11805
+		division_template = "Divisão de Infantaria"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
 	}
-
-	division = { # "1a Caçadores de Moçambique"
-		division_name = {
-				is_name_ordered = yes
-				name_order = 24
-		}
-		location = 8245
-		division_template = "Força de Caçadores"
-		start_experience_factor = 0.3
+	division = {
+		name = "12a Divisão de Infantaria"
+		location = 11805
+		division_template = "Divisão de Infantaria"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
 	}
-	division = { # "2a Caçadores de Moçambique"
-		division_name = {
-				is_name_ordered = yes
-				name_order = 25
-		}
-		location = 8245
-		division_template = "Força de Caçadores"
-		start_experience_factor = 0.3
+	division = {
+		name = "13a Divisão de Infantaria"
+		location = 11805
+		division_template = "Divisão de Infantaria"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
 	}
-}
-
+	division = {
+		name = "14a Divisão de Infantaria"
+		location = 11805
+		division_template = "Divisão de Infantaria"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+	division = {
+		name = "15a Divisão de Infantaria"
+		location = 11805
+		division_template = "Divisão de Infantaria"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+	division = {
+		name = "16a Divisão de Infantaria"
+		location = 11805
+		division_template = "Divisão de Infantaria"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+	
+	#	Africa	#
+	division = {
+		name = "1a Divisão Colonial"
+		location = 11805
+		division_template = "Divisão Colonial"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+		division = {
+		name = "2a Divisão Colonial"
+		location = 11805
+		division_template = "Divisão Colonial"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+		division = {
+		name = "3a Divisão Colonial"
+		location = 11805
+		division_template = "Divisão Colonial"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+		division = {
+		name = "4a Divisão Colonial"
+		location = 11805
+		division_template = "Divisão Colonial"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+		division = {
+		name = "5a Divisão Colonial"
+		location = 11805
+		division_template = "Divisão Colonial"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+		division = {
+		name = "6a Divisão Colonial"
+		location = 11805
+		division_template = "Divisão Colonial"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "7a Divisão Colonial"
+		location = 11805
+		division_template = "Divisão Colonial"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+		division = {
+		name = "8a Divisão Colonial"
+		location = 11805
+		division_template = "Divisão Colonial"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+		division = {
+		name = "9a Divisão Colonial"
+		location = 11805
+		division_template = "Divisão Colonial"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+		division = {
+		name = "10a Divisão Colonial"
+		location = 11805
+		division_template = "Divisão Colonial"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+		division = {
+		name = "11a Divisão Colonial"
+		location = 11805
+		division_template = "Divisão Colonial"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "12a Divisão Colonial"
+		location = 11805
+		division_template = "Divisão Colonial"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+		division = {
+		name = "13a Divisão Colonial"
+		location = 11805
+		division_template = "Divisão Colonial"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+		division = {
+		name = "14a Divisão Colonial"
+		location = 11805
+		division_template = "Divisão Colonial"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+		division = {
+		name = "15a Divisão Colonial"
+		location = 11805
+		division_template = "Divisão Colonial"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+		division = {
+		name = "16a Divisão Colonial"
+		location = 11805
+		division_template = "Divisão Colonial"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+		division = {
+		name = "17a Divisão Colonial"
+		location = 11805
+		division_template = "Divisão Colonial"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+		division = {
+		name = "18a Divisão Colonial"
+		location = 11805
+		division_template = "Divisão Colonial"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+		division = {
+		name = "19a Divisão Colonial"
+		location = 11805
+		division_template = "Divisão Colonial"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+		division = {
+		name = "20a Divisão Colonial"
+		location = 11805
+		division_template = "Divisão Colonial"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "21a Divisão Colonial"
+		location = 11805
+		division_template = "Divisão Colonial"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+		division = {
+		name = "22a Divisão Colonial"
+		location = 11805
+		division_template = "Divisão Colonial"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+		division = {
+		name = "23a Divisão Colonial"
+		location = 11805
+		division_template = "Divisão Colonial"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+		division = {
+		name = "24a Divisão Colonial"
+		location = 11805
+		division_template = "Divisão Colonial"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
 
 ### Aeronáutica Militar ###
 air_wings = {
 	112 = {
 		# Noite Esquadrão de Bombardeiro  -- Ju 52/3m bombers
-		tac_bomber_equipment_0 = {
+		fighter_equipment_0 = {
 			owner = "POR" 
-			amount = 12
-		}
+			amount = 80
+			}
+		fighter_equipment_0 = {
+			owner = "POR" 
+			amount = 80
+			}
 		# Dia Esquadrão de Bombardeiro  -- Vickers Valparaiso light bombers
 		CAS_equipment_1 = {
 			owner = "POR" 
-			amount = 12
+			amount = 48
+			}
+		CAS_equipment_1 = {
+		owner = "POR" 
+		amount = 48
+			}
 		}
 	}
 }
