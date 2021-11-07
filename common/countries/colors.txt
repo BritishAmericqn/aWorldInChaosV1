@@ -173,6 +173,10 @@ GUA = {
 	color = rgb { 72 49 112 }
 	color_ui = rgb { 72 49 112 }
 }
+EXI = {
+	color = rgb { 147  91  137 }
+	color_ui = rgb { 147  91  137 }
+}
 HON = {
 	color = rgb { 128 145 65 }
 	color_ui = rgb { 128 145 65 }

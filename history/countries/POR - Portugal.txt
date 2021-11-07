@@ -53,6 +53,7 @@ if = {
 	add_ideas = POR_weak_monarchy
 	add_ideas = POR_colonial_conscription
 	add_ideas = POR_legacy_of_the_explorers
+	add_ideas = POR_brazilian_unrest
 	set_stability = 0.60
 	set_war_support = 0.15	
 	set_research_slots = 3
