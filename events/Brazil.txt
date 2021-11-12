@@ -38,7 +38,7 @@ country_event = {
 	}
 	
 	option = {
-		name = brazil.1.a
+		name = brazil.2.a
 		BRE = {
 			transfer_state = 504
 			declare_war_on = {
@@ -50,6 +50,39 @@ country_event = {
 		
 		hidden_effect = {
 			news_event = { days = 1 id = news.340 }
+		}
+	}
+}
+
+country_event = {
+	id = brazil.3
+	title = brazil.3.t
+	desc = brazil.3.d
+	picture = GFX_report_event_vienna_award_hungary
+	
+	trigger = {
+		date > 1936.5.1
+		NOT = { has_global_flag = brazil_rebels_2  }
+	}
+	
+	immediate = {
+		set_global_flag = brazil_rebels_2
+	}
+	
+	option = {
+		name = brazil.3.a
+		BRE = {
+			transfer_state = 504
+			transfer_state = 280
+			declare_war_on = {
+				target = POR
+				type = annex_everything
+			}
+			load_oob = "BRE_Rebels_2"
+		}
+		
+		hidden_effect = {
+			news_event = { days = 1 id = news.341 }
 		}
 	}
 }
