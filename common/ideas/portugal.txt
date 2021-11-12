@@ -34,7 +34,7 @@ ideas = {
 			modifier = {
 				stability_factor = -0.10
 				war_support_factor = -0.10
-				consumer_goods_factor = .05
+				consumer_goods_factor = 0.05
 			}
 		}
 		
@@ -89,7 +89,7 @@ ideas = {
 			
 			modifier = {
 				political_power_gain = -0.5
-				stability_factor = -0.010
+				stability_factor = -0.10
 					
 			}
 		}
