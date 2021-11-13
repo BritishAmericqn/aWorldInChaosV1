@@ -2,6 +2,7 @@
 
 set_research_slots = 6
 add_ideas = superior_will
+add_ideas = self_sufficiency
 oob = "CRO_1936"
 
 set_technology = {

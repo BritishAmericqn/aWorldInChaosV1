@@ -23,6 +23,7 @@ leader_traits = {
 			factor = 1
 		}
 	}
+	
 
 	underage_monarch = {
 		random = no

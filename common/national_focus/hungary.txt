@@ -145,7 +145,7 @@ focus_tree = {
 		id = HUN_Alone
 		icon = GFX_Focus_hun_assassinate_horthy
 		prerequisite = { }
-		mutually_exclusive = { }
+		mutually_exclusive = { focus = HUN_Austria_legacy }
 		x = 10
 		y = 0
 		
@@ -440,6 +440,477 @@ focus_tree = {
 		remove_ideas = HUN_disparate_ethnicities
 		add_war_support = 0.1
 		add_stability = -0.2
+		}
+	}
+	focus = {
+		id = HUN_ECO
+		icon = GFX_goal_generic_construction2
+		prerequisite = { }
+		mutually_exclusive = { }
+		x = 20 
+		y = 0
+		
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_ideas = GER_autarky_idea
+		}
+	}
+	focus = {
+		id = HUN_ECO
+		icon = GFX_goal_generic_construction2
+		prerequisite = { }
+		mutually_exclusive = { }
+		x = 20 
+		y = 0
+		
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_ideas = GER_autarky_idea
+		}
+	}
+	focus = {
+		id = HUN_ECO_1
+		icon = GFX_goal_generic_construction2
+		prerequisite = { focus = HUN_ECO }
+		mutually_exclusive = { }
+		x = 17 
+		y = 1
+		
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			has_full_control_of_state = 43
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			43 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = HUN_ECO_2
+		icon = GFX_goal_generic_construction2
+		prerequisite = { focus = HUN_ECO }
+		mutually_exclusive = { }
+		x = 23
+		y = 1
+		
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			has_full_control_of_state = 155
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			155 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = HUN_ECO_MIL
+		icon = GFX_goal_generic_construction2
+		prerequisite = { 
+		focus = HUN_ECO_2 
+		focus = HUN_ECO_1 
+		}
+		mutually_exclusive = { }
+		x = 20
+		y = 2
+		
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			has_full_control_of_state = 43
+			has_full_control_of_state = 154
+			has_full_control_of_state = 155
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			43 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			154 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			155 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = HUN_EAST_RAILROADS
+		icon = GFX_goal_generic_construction2
+		prerequisite = { focus = HUN_ECO_2 }
+		x = 24
+		y = 2
+		
+		cost = 10
+	
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available = {
+			has_full_control_of_state = 154
+			has_full_control_of_state = 83
+			has_full_control_of_state = 76
+			has_full_control_of_state = 73
+		}
+	
+		bypass = {
+
+		}
+	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	
+		completion_reward = {
+			154 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			83 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			76 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			73 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = HUN_WEST_RAILROADS
+		icon = GFX_goal_generic_construction2
+		prerequisite = { focus = HUN_ECO_1 }
+		x = 16
+		y = 2
+		
+		cost = 10
+	
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available = {
+			has_full_control_of_state = 155
+			has_full_control_of_state = 43
+			has_full_control_of_state = 45
+			has_full_control_of_state = 664
+		}
+	
+		bypass = {
+
+		}
+	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	
+		completion_reward = {
+			45 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			155 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			43 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			664 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = HUN_AUSTRIA_RAILROADS
+		icon = GFX_goal_generic_construction2
+		prerequisite = { focus = HUN_WEST_RAILROADS }
+		prerequisite = { focus = HUN_Austria_Hungary }
+		x = 16
+		y = 3 
+		
+		cost = 10
+	
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available = {
+			has_full_control_of_state = 4
+			has_full_control_of_state = 152
+			has_full_control_of_state = 807
+			has_full_control_of_state = 102
+		}
+	
+		bypass = {
+
+		}
+	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	
+		completion_reward = {
+			4 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+			152 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			807 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			102 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = HUN_BOH_RAILROADS
+		icon = GFX_goal_generic_construction2
+		prerequisite = { focus = HUN_AUSTRIA_RAILROADS }
+		prerequisite = { focus = HUN_BOH }
+		x = 16
+		y = 5 
+		
+		cost = 10
+	
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available = {
+			has_full_control_of_state = 70
+			has_full_control_of_state = 71
+			has_full_control_of_state = 9
+			has_full_control_of_state = 75
+		}
+	
+		bypass = {
+
+		}
+	
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+	
+		completion_reward = {
+			9 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+			75 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			70 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			71 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 }
