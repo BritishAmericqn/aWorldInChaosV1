@@ -2970,6 +2970,8 @@
  ADU:0 "Andalusia"
  ADU_DEF:0 "Andalusia"
  ADU_ADJ:0 "Andalusian"
+ EXI:0 "Bosnian Exiles"
+ EXI_ADJ:0 "Bosnian"
  BAY_fascism:1 "Groß-Bayern"
  BAY_fascism_DEF:1 "Groß-Bayern"
  BAY_democratic:1 "Bavarian Free State"
@@ -3188,4 +3190,5 @@
  RUS:0 "Russian Empire"
  RUS_ADJ:0 "Russian"
  CRF:0 "Ordenstaat Corfu"
+
  

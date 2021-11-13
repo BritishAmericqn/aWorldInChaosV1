@@ -1,0 +1,92 @@
+division_template = {
+	name = "Brazilian Guerillas"
+	
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+	}
+}
+
+units = {
+	division = {
+		name = "1 Divisão de Voluntários"
+		location = 10959
+		division_template = "Brazilian Guerillas"
+	}
+	division = {
+		name = "2 Divisão de Voluntários"
+		location = 10959
+		division_template = "Brazilian Guerillas"
+	}
+	division = {
+		name = "3 Divisão de Voluntários"
+		location = 10959
+		division_template = "Brazilian Guerillas"
+	}
+	division = {
+		name = "4 Divisão de Voluntários"
+		location = 10959
+		division_template = "Brazilian Guerillas"
+	}
+	division = {
+		name = "5 Divisão de Voluntários"
+		location = 10959
+		division_template = "Brazilian Guerillas"
+	}
+	division = {
+		name = "6 Divisão de Voluntários"
+		location = 10959
+		division_template = "Brazilian Guerillas"
+	}
+	division = {
+		name = "7 Divisão de Voluntários"
+		location = 10959
+		division_template = "Brazilian Guerillas"
+	}
+	division = {
+		name = "8 Divisão de Voluntários"
+		location = 10959
+		division_template = "Brazilian Guerillas"
+	}
+	division = {
+		name = "9 Divisão de Voluntários"
+		location = 10959
+		division_template = "Brazilian Guerillas"
+	}
+	division = {
+		name = "10 Divisão de Voluntários"
+		location = 10959
+		division_template = "Brazilian Guerillas"
+	}
+	division = {
+		name = "11 Divisão de Voluntários"
+		location = 10959
+		division_template = "Brazilian Guerillas"
+	}
+	division = {
+		name = "12 Divisão de Voluntários"
+		location = 10959
+		division_template = "Brazilian Guerillas"
+	}
+	division = {
+		name = "13 Divisão de Voluntários"
+		location = 10959
+		division_template = "Brazilian Guerillas"
+	}
+	division = {
+		name = "14 Divisão de Voluntários"
+		location = 10959
+		division_template = "Brazilian Guerillas"
+	}
+	division = {
+		name = "15 Divisão de Voluntários"
+		location = 10959
+		division_template = "Brazilian Guerillas"
+	}
+	division = {
+		name = "16 Divisão de Voluntários"
+		location = 10959
+		division_template = "Brazilian Guerillas"
+	}
+}

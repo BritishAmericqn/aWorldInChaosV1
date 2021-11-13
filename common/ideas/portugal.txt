@@ -1,7 +1,7 @@
 ideas = {
 	country = {
 
-		POR_unreliable_army = {
+		POR_outdated_army = {
 			picture = generic_army_problems
 			allowed = {
 				original_tag = POR
@@ -14,9 +14,27 @@ ideas = {
 			
 			modifier = {
 				army_org_factor = -0.10
-				conscription_factor = -0.25
 				war_support_factor = -0.05
-				army_attack_factor = -0.05			
+				army_attack_factor = -0.10
+				army_defense_factor = -0.10
+			}
+		}
+		
+		POR_brazilian_unrest = {
+			picture = GFX_focus_generic_support_the_left_right
+			allowed = {
+				original_tag = POR
+			}
+
+			allowed_civil_war = {
+				tag = POR
+			}
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.10
+				war_support_factor = -0.10
+				consumer_goods_factor = 0.05
 			}
 		}
 		
@@ -58,7 +76,7 @@ ideas = {
 			}
 		}
 		
-		POR_unstable_republic = {
+		POR_weak_monarchy = {
 			picture = por_unstable_republic
 			allowed = {
 				original_tag = POR
@@ -71,8 +89,8 @@ ideas = {
 			
 			modifier = {
 				political_power_gain = -0.5
-				stability_weekly = -0.005
-				production_speed_buildings_factor = -0.20	
+				stability_factor = -0.10
+					
 			}
 		}
 

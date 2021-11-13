@@ -173,6 +173,10 @@ GUA = {
 	color = rgb { 72 49 112 }
 	color_ui = rgb { 72 49 112 }
 }
+EXI = {
+	color = rgb { 147  91  137 }
+	color_ui = rgb { 147  91  137 }
+}
 HON = {
 	color = rgb { 128 145 65 }
 	color_ui = rgb { 128 145 65 }
@@ -726,4 +730,8 @@ BAL = {
 RUS = {
 	color = rgb { 66 130 64 }
 	color_ui = rgb { 66 130 64 }
+}
+BRE = {
+	color = rgb { 153 51 0 }
+	color_ui = rgb { 153 51 0 }
 }

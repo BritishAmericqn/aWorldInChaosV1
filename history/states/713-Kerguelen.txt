@@ -5,11 +5,12 @@ state={
 	state_category = tiny_island
 
 	history={
-		owner = FRA
+		add_core_of = EXI
+		owner = EXI
 		buildings = {
-			infrastructure = 1
+			infrastructure = 10
 			2165 = {
-				naval_base = 1
+				naval_base = 10
 			}
 		}
 	}
