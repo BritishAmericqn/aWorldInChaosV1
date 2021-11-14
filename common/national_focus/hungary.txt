@@ -387,6 +387,8 @@ focus_tree = {
 		remove_state_core = 102
 		remove_state_core = 45
 		remove_state_core = 764
+		remove_state_core = 736
+		remove_state_core = 163
 		}
 		HUN = {
 					set_autonomy = {
