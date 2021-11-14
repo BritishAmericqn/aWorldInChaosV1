@@ -191,7 +191,7 @@ ideas = {
 				airforce_intel_to_others = -60
 				civilian_intel_to_others = -60
 				navy_intel_to_others = -60
-				ai_get_ally_desire_factor = -0.5
+				ai_get_ally_desire_factor = -100
 			}
 			
 			rule = {
