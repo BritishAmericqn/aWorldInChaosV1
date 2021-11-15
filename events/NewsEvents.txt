@@ -13238,3 +13238,18 @@ news_event = {
 		name = news.341.a
 	}
 }
+
+news_event = {
+	id = news.342
+	title = news.342.t
+	desc = news.342.d
+	picture = GFX_news_event_african_soldiers
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.342.a
+	}
+}

@@ -86,3 +86,37 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = brazil.4
+	title = brazil.4.t
+	desc = brazil.4.d
+	picture = GFX_report_event_vienna_award_hungary
+	
+	trigger = {
+		date > 1936.7.1
+		NOT = { has_global_flag = brazil_rebels_3  }
+	}
+	
+	immediate = {
+		set_global_flag = brazil_rebels_3
+	}
+	
+	option = {
+		name = brazil.3.a
+		BRE = {
+			transfer_state = 504
+			transfer_state = 280
+			transfer_state = 505
+			declare_war_on = {
+				target = POR
+				type = annex_everything
+			}
+			load_oob = "BRE_Rebels_3"
+		}
+		
+		hidden_effect = {
+			news_event = { days = 1 id = news.342 }
+		}
+	}
+}

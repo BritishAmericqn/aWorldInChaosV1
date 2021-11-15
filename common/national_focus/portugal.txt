@@ -516,7 +516,7 @@ focus_tree = {
 		}
 	}			
 	
-	#Brazilian Tree
+	###################Brazilian Tree###########################
 	focus = {
 		id = POR_the_brazilian_question
 		icon = GFX_goal_generic_construct_mil_factory
@@ -530,6 +530,7 @@ focus_tree = {
 		}
 		
 		available = {
+		date > 1936.7.1
 		}
 		
 		bypass = {
@@ -545,7 +546,7 @@ focus_tree = {
 				}
 	}			
 	
-	#Brazilian Alliance
+	##################Brazilian Alliance#######################
 	focus = {
 		id = POR_mend_relations_with_brazil
 		icon = GFX_goal_generic_construct_mil_factory
@@ -638,6 +639,110 @@ focus_tree = {
 			
 			hidden_effect = {
 				news_event = { days = 1 id = news.339 }
+			}
+		}
+	}
+	
+	###################Status Quo#########################
+	focus = {
+		id = POR_toe_the_line
+		icon = GFX_goal_generic_alliance
+		prerequisite = { focus = POR_the_brazilian_question }
+		x = 15
+		y = 1
+		
+		cost = 5
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available = {
+		}
+		
+		bypass = {
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	
+	focus = {
+		id = POR_secure_the_interior
+		icon = GFX_goal_generic_alliance
+		prerequisite = { focus = POR_toe_the_line }
+		x = 15
+		y = 2
+		
+		cost = 10
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available = {
+		}
+		
+		bypass = {
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+			add_political_power = 50
+			add_manpower = -20000
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -5000
+			}
+		}
+	}
+
+	focus = {
+		id = POR_secure_the_interior
+		icon = GFX_goal_generic_alliance
+		prerequisite = { focus = POR_toe_the_line }
+		x = 15
+		y = 2
+		
+		cost = 10
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available = {
+		}
+		
+		bypass = {
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+			BRE = {
+				transfer_state = 504
+				transfer_state = 280
+				transfer_state = 505
+				transfer_state = 495
+				declare_war_on = {
+					target = POR
+					type = annex_everything
+				}
+				load_oob = "BRE_Rebels_4"
+			}
+			remove_ideas = POR_brazilian_unrest
+			hidden_effect = {
+				news_event = { days = 1 id = news.343 }
 			}
 		}
 	}
