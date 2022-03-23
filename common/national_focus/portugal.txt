@@ -706,11 +706,11 @@ focus_tree = {
 	}
 
 	focus = {
-		id = POR_secure_the_interior
+		id = POR_crush_the_rebels
 		icon = GFX_goal_generic_alliance
-		prerequisite = { focus = POR_toe_the_line }
+		prerequisite = { focus = POR_secure_the_interior }
 		x = 15
-		y = 2
+		y = 3
 		
 		cost = 10
 		
@@ -746,4 +746,102 @@ focus_tree = {
 			}
 		}
 	}
+	
+	#################Reunited Kingdom#####################
+	focus = {
+		id = POR_reclaim_the_jewel
+		icon = GFX_goal_generic_alliance
+		prerequisite = { focus = POR_the_brazilian_question }
+		x = 17
+		y = 1
+		
+		cost = 5
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available = {
+		}
+		
+		bypass = {
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+			add_stability = -0.10	
+		}
+	}
+	
+	focus = {
+		id = POR_prepare_an_invasion
+		icon = GFX_goal_generic_alliance
+		prerequisite = { focus = POR_reclaim_the_jewel }
+		x = 17
+		y = 2
+		
+		cost = 10
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available = {
+		}
+		
+		bypass = {
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+			add_stability = -0.10
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -10000
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = -1000
+			}
+		}
+	}
+	
+	focus = {
+		id = POR_the_kingdom_of_brazil
+		icon = GFX_goal_generic_alliance
+		prerequisite = { focus = POR_prepare_an_invasion }
+		x = 17
+		y = 3
+		
+		cost = 10
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available = {
+		}
+		
+		bypass = {
+		}
+		
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		
+		completion_reward = {
+			stability_factor = -0.10
+			add_state_core = 499
+			add_state_core = 498
+			add_state_core = 497
+			}
+		}
+	}
+	
 	
